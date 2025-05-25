@@ -1,6 +1,6 @@
-import { TextElement } from "../types";
+import { TextElementType } from "../types";
 
-const TEXT_ELEMENT_TYPE: TextElement = "TEXT_ELEMENT";
+export const TEXT_ELEMENT_TYPE: TextElementType = "TEXT_ELEMENT";
 
 export default function createTextElement(text: string) {
   return {

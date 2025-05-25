@@ -1,6 +1,11 @@
+import { ElementType, Props } from "../types";
 import createTextElement from "./createTextElement";
 
-export default function createElement(type, props?, ...children) {
+export default function createElement<T extends ElementType>(
+  type: T,
+  props: Props<T>,
+  ...children
+) {
   return {
     type,
     props: {
